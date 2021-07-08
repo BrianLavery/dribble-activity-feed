@@ -1,0 +1,47 @@
+.notification {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 8px 16px;
+  border-bottom: 1px solid rgb(235,235,235);
+}
+
+.notification:last-child {
+  /* CSS code for the last element with class="notification" */
+  border-bottom: 0 solid white;
+}
+
+.notification small {
+  color: #999999;
+  font-weight: bold;
+  font-size: smaller;
+}
+
+.notification p {
+  line-height: 1.4;
+}
+
+.notification .notification-info {
+  flex-grow: 1;
+  padding: 0 24px;
+}
+
+.notification .notification-actions {
+  opacity: 0;
+  transition: ease 0.3s;
+  /* display: flex; */
+}
+
+.notification:hover .notification-actions {
+  opacity: 1;
+  transition: ease 0.3s;
+}
+
+.notification .notification-actions a {
+  color: #999999;
+  font-size: 14px;
+}
+
+.notification .notification-actions a:hover {
+  color: #555555;
+}

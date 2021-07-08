@@ -1,0 +1,18 @@
+/* Your tabs CSS code here */
+.tabs {
+  display: flex;
+  margin: 0 0 16px;
+}
+
+.tab {
+  padding: 0 0 8px;
+  margin: 0 16px 0 0;
+  border-bottom: 3px solid transparent;
+  color: black;
+  opacity: 0.4;
+}
+
+.tab.active {
+  opacity: 1;
+  border-bottom: 3px solid #555555;
+}
